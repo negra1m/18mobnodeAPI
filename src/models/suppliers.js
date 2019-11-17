@@ -6,6 +6,6 @@ export const SuppliersModel = {
         number,
         postCode,
         stateCode,
-        street,
+        street
     }
 }
