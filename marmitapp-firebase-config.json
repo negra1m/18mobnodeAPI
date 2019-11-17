@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "marmitapp-8233a",
+  "private_key_id": "66169834a67ead2b4885ee11ed83eb8d607b680f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCbcFiF0E96odEb\n+ks1CzjJMsu8EjfpvnYIlQ4QWMBkQAbCJK72cdc3dWkHubCVOrBKS3WyqooC/VnO\nlfMDRC2gri4AgpzdCRLEJzemfGB0/hkqTSg0ltFiWwF2CP4VBTMgqCw0wYcI6vhO\nJ3ynMaYqmfFhaEw2oJ0W7VdGC5knO1QcniNLvA+c7LQXBHdsk8/Ypu2zeOtbFZpE\nLFu5C2eIxgw0EGZs6QXuljYoYCBwiTR2/Mm4qMqZ/4cu0fiWYnWv/Mm5r76Dtfx8\nG3R8+9/olBe71n/YiU4siaHlbCOsNISRFNxHZB8bJ2SZzGj9qVcFVelrNy0uREbi\no2fZaCfRAgMBAAECggEAAn8Wm+ETarU7PRlbMH0XdpNHVoQeI+XaQlNnBjwPrHiD\nB0aUrQp5ZfePthcdUvs+IjZVq8a9iFRidyz9OfzkBPXxMRLH80yaUZ5N4HGUUMK1\nO6LBOd1/e8Z5hrhYoNSsXFqZGaiPSzVPYz1y/QIxEJN3/wwQV8sC9N+fWIWWikzN\nJqsyN4StMxyqqB4FGVC4I0EbzdEmQ4DF8wKPJcPrqVWhCXZXLEzJYzvEWD4GI0Bj\nueQz3XgVkW96rHYJ6D6dZGLeFqG3UHd/xhdtZ82Lvrly+FZKmhOdvVt/nuZJqy75\ndkgQXfFo2SA6I8pAbCsKYLmJO4an82jXUZHDj07nYQKBgQDUUw4Y1hSUNBXu4DpC\nJDHGMxCcEVqFItw6g7HQ4Edq9zn5PzHvduqnmCv0aMETtylSD+GCzXhOw2gt2DWI\nJbDbaJGTz/FSoPukF/pW3DVPbIuRIb7ng3WEN30jR5NiDb6KqUJnVucWwyhUNduf\ndB9hb16vVcJ0EgLfeVUVskkRIQKBgQC7abZA6w/vmLllwjs0k/YAG2VTu+FsdeaZ\n23F1n4wzmE0/yt44DjAuocY/3IE1fKubIgkMqDniVXJ9i+JxAn8SWfYvLeBsilld\nfegsbGO/Ckw+meguyyLSXqsPwAaON1kawOLSk2vkHHNwZU3+YVdb9fc8vnzce3rD\nO2D8mWlQsQKBgDO2juZprdVy4iyuHEJjwmO9qDv61gs7NFxkGvj+xyY8VLhqNeVX\nF0v+eiYrJWuB3uSHzasoFDdKzKLt2Avy8iJeU6amrOYtI10SIfzp4WoYy91rVK3a\njNLJGQdwtWraYiAvnWbB+cLHgZkRDQ7HH6WBlJQr1RKkGGMJkDmalMVBAoGBAIp1\nZSK9Bz76VC5ruxXzIlGd69RbAAYDbOTKjR5bS1dq89dnZ5l+UfaBqlfP7t23R4kL\nMihZuLoQas96I0deksbaE9lzSVSnObKqrHb1dRPU5dNyHWlExmspabPvKGi1V20+\nh9UO+SzEID0vetmuzL2yEICeMt0plN7b5aF5LadhAoGBAMlhQLo7OYp3Gq96gF4e\nP+RG3FfNoJckbALbAa9H3tIG9iWNuUtGNQ5XcKspMpP6nHuqVh8efSfW6s/sFkk+\nh5kybF27hVzOZZ8LtxW6EJwrqGCHqIv6NSLS0+KX8ZNQgLSZNDzk7fsHw7v7vdxZ\nuKQF6Fg432a1KxKevgj0sAx+\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-d2nni@marmitapp-8233a.iam.gserviceaccount.com",
+  "client_id": "100776645200552444399",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-d2nni%40marmitapp-8233a.iam.gserviceaccount.com"
+}
