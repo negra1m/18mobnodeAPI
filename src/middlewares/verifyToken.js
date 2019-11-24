@@ -17,7 +17,7 @@ module.exports = (request, response, next) => {
     jwt.verify(token, secret, (error, decoded) => {
         if (error) {
             return response
-                .status(500)
+                .status(401)
                 .send({ error });
         }
         next();
