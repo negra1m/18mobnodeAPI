@@ -7,9 +7,9 @@ class Supplier {
      * CREATE
      */
     static add(req, res) {
-        console.log('--------------------------')
-        console.log(req.body)
-        console.log('--------------------------')
+      //  console.log('--------------------------')
+      // console.log(req.body)
+      //  console.log('--------------------------')
         const Supplier = {
             name: req.body.name,
             products: [],
@@ -36,12 +36,11 @@ class Supplier {
             .getAll()
             .then(snapshot => {
 
-
                 const suppliers = snapshot.docs.map(supplier => ({
                     id: supplier.id,
                     data: supplier.data()
                 }));
-                console.log('snapshot', suppliers);
+                //console.log('snapshot', suppliers);
                 return res.json(suppliers);
             })
             .catch(err => {
@@ -65,7 +64,6 @@ class Supplier {
                     return res.sendStatus(404)
                         .send({ message: 'This supplier doesn`t exist on our database.' });
                 }
-
 
             })
             .catch(err => {
