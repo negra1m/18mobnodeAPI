@@ -8,10 +8,19 @@ class Supplier {
      * CREATES
      */
     static add(req, res) {
+        console.log('--------------------------')
+        console.log(req.body)
+        console.log('--------------------------')
         const Supplier = {
             name: req.body.name,
-            email: req.body.email,
-            password: req.body.password
+            products: [],
+            address: { 
+                city: req.body.address.city, 
+                number: req.body.address.number, 
+                postCode: req.body.address.postCode, 
+                stateCode: req.body.address.stateCode, 
+                street: req.body.address.street ,
+            }
         };
 
         SuppliersModel
@@ -73,9 +82,26 @@ class Supplier {
     static update(req, res) {
         const id = req.params.id;
         const supplier = {
-            name: req.body.name,
-            email: req.body.email,
-            password: req.body.password
+            city: req.body.city, 
+            number: req.body.number, 
+            postCode: req.body.postCode, 
+            stateCode: req.body.stateCode, 
+            street: req.body.street ,
+        };
+
+        SuppliersModel
+            .update(id, supplier)
+            .then(() => res.sendStatus(200))
+            .catch(err => res.sendStatus(500).json(err));
+    }
+
+    /**
+     * ADD PRODUCTS
+     */
+    static addProducts (req, res) {
+        const id = req.params.id;
+        const supplier = {
+            products: req.body.products
         };
 
         SuppliersModel

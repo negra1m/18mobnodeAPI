@@ -19,7 +19,6 @@ class Users extends FirebaseModel {
             .where('password','==',password)
             .get();
     }
-
 }
 
 module.exports = Users;
