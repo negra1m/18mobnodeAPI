@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "593abbbf-5d60-4986-a7e3-48388a5c2596",
+		"name": "FIAP - 18 Mob - Marmitap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/suppliers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlZZZTNsS3JTV1Z3OWpTa0VmaXJiIiwiaWF0IjoxNTc0NjI2NDAwLCJleHAiOjE1NzQ2Njk2MDB9.LrYTqCADIvRY0yPtFIfjLQqS-sRPFKg-jO0eoESLCYM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://node-api-18mob-negra1m.herokuapp.com/suppliers",
+					"protocol": "https",
+					"host": [
+						"node-api-18mob-negra1m",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"suppliers"
+					]
+				},
+				"description": "Get the list of all suppliers\n"
+			},
+			"response": []
+		},
+		{
+			"name": "/suppliers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlZZZTNsS3JTV1Z3OWpTa0VmaXJiIiwiaWF0IjoxNTc0NjI2NDAwLCJleHAiOjE1NzQ2Njk2MDB9.LrYTqCADIvRY0yPtFIfjLQqS-sRPFKg-jO0eoESLCYM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"address\": {\n        \"city\": \"São Paulo\",\n        \"number\": \"459\",\n        \"postCode\": \"01415001\",\n        \"stateCode\": \"SP\",\n        \"street\": \"Rua Bela Cintra\"\n    },\n    \"name\": \"Marmiteiros Teste 05\",\n    \"phone\": \"33594876\"\n    \n}"
+				},
+				"url": {
+					"raw": "https://node-api-18mob-negra1m.herokuapp.com/suppliers/",
+					"protocol": "https",
+					"host": [
+						"node-api-18mob-negra1m",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"suppliers",
+						""
+					]
+				},
+				"description": "Post a new supplier"
+			},
+			"response": []
+		},
+		{
+			"name": "/:id/products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlZZZTNsS3JTV1Z3OWpTa0VmaXJiIiwiaWF0IjoxNTc0NjI2NDAwLCJleHAiOjE1NzQ2Njk2MDB9.LrYTqCADIvRY0yPtFIfjLQqS-sRPFKg-jO0eoESLCYM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlZZZTNsS3JTV1Z3OWpTa0VmaXJiIiwiaWF0IjoxNTc0NjI2NDAwLCJleHAiOjE1NzQ2Njk2MDB9.LrYTqCADIvRY0yPtFIfjLQqS-sRPFKg-jO0eoESLCYM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\t{ \n\t\t\"products\": [\n\t\t{\n\t\t\"name\": \"Arroz e feijão com ovos\",\n\t\t\"price\": 10.50,\n\t\t\"itens\": \n\t\t\t[\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Arroz\",\n\t\t\t\t\t\"price\": 0.0\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Feijão\",\n\t\t\t\t\t\"price\": 0.0\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Ovos\",\n\t\t\t\t\t\"price\": 0.0\n\t\t\t\t}\n\t\t\t] \n\t\t},\n\t\t{\n\t\t\"name\": \"Arroz e feijão com ovos 02\",\n\t\t\"price\": 10.50,\n\t\t\"itens\": \n\t\t\t[\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Arroz\",\n\t\t\t\t\t\"price\": 0.0\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Feijão\",\n\t\t\t\t\t\"price\": 0.0\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Ovos\",\n\t\t\t\t\t\"price\": 0.0\n\t\t\t\t}\n\t\t\t] \n\t\t},\n\t\t{\n\t\t\"name\": \"Arroz e feijão com ovos 03\",\n\t\t\"price\": 10.50,\n\t\t\"itens\": \n\t\t\t[\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Arroz\",\n\t\t\t\t\t\"price\": 0.0\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Feijão\",\n\t\t\t\t\t\"price\": 0.0\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"name\": \"Ovos\",\n\t\t\t\t\t\"price\": 0.0\n\t\t\t\t}\n\t\t\t] \n\t\t}\n]}\n"
+				},
+				"url": {
+					"raw": "https://node-api-18mob-negra1m.herokuapp.com/suppliers/0aNod56ZlDP74dgA7f7Q/products/",
+					"protocol": "https",
+					"host": [
+						"node-api-18mob-negra1m",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"suppliers",
+						"0aNod56ZlDP74dgA7f7Q",
+						"products",
+						""
+					]
+				},
+				"description": "update the list of productos of a supplier"
+			},
+			"response": []
+		},
+		{
+			"name": "/auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"john.connor@sky.net\", \n\t\"password\": \"SarahConnor\"\n    \n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth"
+					]
+				},
+				"description": "authenticate on the app"
+			},
+			"response": []
+		}
+	]
+}
