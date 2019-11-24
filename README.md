@@ -1,5 +1,5 @@
 # NodeJS - 18MOB
-<img src="docs/node-logo.png" alt="drawing" style="width:10px;"/>
+<img src="docs/node-logo.png" alt="drawing" style="max-width:100px;"/>
 
 ## Proposta:
 
@@ -26,7 +26,7 @@
 Os testes da API estão disponíveis dentro do `docs` na raíz do projeto.
 
 ## API Dependencies 
-![Libs](https://image.flaticon.com/icons/png/128/167/167756.png) 
+<img src="https://image.flaticon.com/icons/png/128/167/167756.png" alt="drawing" style="max-width:50px;"/>
 Foram inclusos nessa API: 
 - 	**express**
 - 	**firebase**
