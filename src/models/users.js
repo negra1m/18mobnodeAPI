@@ -1,6 +1,6 @@
-const BaseModel = require('./conn');
+const FirebaseModel = require('./firebase');
 
-class Users extends BaseModel {
+class Users extends FirebaseModel {
     constructor(){
         super();
 

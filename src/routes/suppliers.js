@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const supplierController = require('../controllers/suppliers')
-const auth = require('../middlewares/verifyToken');
+const auth = require('../controllers/auth');
+
 
 router.get('/', supplierController.getAll);
 router.get('/:id', supplierController.getById);
