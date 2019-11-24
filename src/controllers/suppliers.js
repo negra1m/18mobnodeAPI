@@ -1,11 +1,10 @@
 const supplier = require('../models/suppliers');
-
 const SuppliersModel = new supplier();
 
 class Supplier {
 
     /**
-     * CREATES
+     * CREATE
      */
     static add(req, res) {
         console.log('--------------------------')
@@ -14,12 +13,12 @@ class Supplier {
         const Supplier = {
             name: req.body.name,
             products: [],
-            address: { 
-                city: req.body.address.city, 
-                number: req.body.address.number, 
-                postCode: req.body.address.postCode, 
-                stateCode: req.body.address.stateCode, 
-                street: req.body.address.street ,
+            address: {
+                city: req.body.address.city,
+                number: req.body.address.number,
+                postCode: req.body.address.postCode,
+                stateCode: req.body.address.stateCode,
+                street: req.body.address.street,
             }
         };
 
@@ -31,7 +30,7 @@ class Supplier {
 
     /**
      * READ
-     */
+    */
     static getAll(_req, res) {
         SuppliersModel
             .getAll()
@@ -60,7 +59,6 @@ class Supplier {
                         id: supplier.id,
                         data: supplier.data()
                     };
-
                     return res.json(Supplier);
 
                 } else {
@@ -82,11 +80,11 @@ class Supplier {
     static update(req, res) {
         const id = req.params.id;
         const supplier = {
-            city: req.body.city, 
-            number: req.body.number, 
-            postCode: req.body.postCode, 
-            stateCode: req.body.stateCode, 
-            street: req.body.street ,
+            city: req.body.city,
+            number: req.body.number,
+            postCode: req.body.postCode,
+            stateCode: req.body.stateCode,
+            street: req.body.street,
         };
 
         SuppliersModel
@@ -98,7 +96,7 @@ class Supplier {
     /**
      * ADD PRODUCTS
      */
-    static addProducts (req, res) {
+    static addProducts(req, res) {
         const id = req.params.id;
         const supplier = {
             products: req.body.products

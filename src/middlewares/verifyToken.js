@@ -2,7 +2,9 @@ const jwt = require('jsonwebtoken');
 const { secret } = require('../config/default');
 
 module.exports = (request, response, next) => {
+
     const token = request.headers['x-access-token'];
+
     if (!token) {
         return response
             .status(401)
