@@ -9,9 +9,10 @@ class User {
      */
     static add(req, res) {
         const User = {
-            name: req.body.name,
             email: req.body.email,
-            password: req.body.password
+            password: req.body.password,
+            name: req.body.name,
+            lastName: req.body.name
         };
 
         UsersModel
@@ -21,14 +22,12 @@ class User {
     }
 
     /**
-     * READ
+     * READ ALL
      */
     static getAll(_req, res) {
         UsersModel
             .getAll()
             .then(snapshot => {
-
-
                 const suppliers = snapshot.docs.map(supplier => ({
                     id: supplier.id,
                     data: supplier.data()
@@ -41,6 +40,9 @@ class User {
             });
     }
 
+    /**
+     * READ ALL BY ID
+     */
     static getById(req, res) {
         const id = req.params.id;
 
@@ -58,8 +60,6 @@ class User {
                     return res.sendStatus(404)
                         .send({ message: 'This supplier doesn`t exist on our database.' });
                 }
-
-
             })
             .catch(err => {
                 return res.sendStatus(500).json(err);
@@ -74,6 +74,7 @@ class User {
         const id = req.params.id;
         const user = {
             name: req.body.name,
+            lastName: req.body.lastName,
             email: req.body.email,
             password: req.body.password
         };
@@ -97,4 +98,4 @@ class User {
     }
 }
 
-module.exports = Supplier
+module.exports = User

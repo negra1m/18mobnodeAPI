@@ -140,17 +140,95 @@
 					"raw": "{\n\t\"email\": \"john.connor@sky.net\", \n\t\"password\": \"SarahConnor\"\n    \n}"
 				},
 				"url": {
-					"raw": "http://localhost:3000/auth",
+					"raw": "https://node-api-18mob-negra1m.herokuapp.com/suppliers/0aNod56ZlDP74dgA7f7Q/auth",
+					"protocol": "https",
+					"host": [
+						"node-api-18mob-negra1m",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"suppliers",
+						"0aNod56ZlDP74dgA7f7Q",
+						"auth"
+					]
+				},
+				"description": "authenticate on the app"
+			},
+			"response": []
+		},
+		{
+			"name": "/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlZZZTNsS3JTV1Z3OWpTa0VmaXJiIiwiaWF0IjoxNTc0NjI2NDAwLCJleHAiOjE1NzQ2Njk2MDB9.LrYTqCADIvRY0yPtFIfjLQqS-sRPFKg-jO0eoESLCYM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"doc.brown@bttf.com.us\", \n\t\"password\": \"ClaraClaytonS2\",\n\t\"name\": \"Emmett\",\n\t\"lastName\": \"Brown\"\n    \n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"auth"
+						"users"
 					]
 				},
-				"description": "authenticate on the app"
+				"description": "Create new user"
+			},
+			"response": []
+		},
+		{
+			"name": "/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlZZZTNsS3JTV1Z3OWpTa0VmaXJiIiwiaWF0IjoxNTc0NjI2NDAwLCJleHAiOjE1NzQ2Njk2MDB9.LrYTqCADIvRY0yPtFIfjLQqS-sRPFKg-jO0eoESLCYM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"doc.brown@bttf.com.us\", \n\t\"password\": \"ClaraClaytonS2\",\n\t\"name\": \"Emmett\",\n\t\"lastName\": \"Brown\"\n    \n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "Get all users"
 			},
 			"response": []
 		}
