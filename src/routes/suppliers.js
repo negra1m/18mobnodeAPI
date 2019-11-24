@@ -2,12 +2,14 @@ const express = require('express');
 const router = express.Router();
 const supplierController = require('../controllers/suppliers')
 const auth = require('../controllers/auth');
+const verifyToken = require('../middlewares/verifyToken')
 
 
-router.get('/', supplierController.getAll);
-router.get('/:id', supplierController.getById);
-router.post('/', supplierController.add);
-router.put('/:id', supplierController.update);
-router.delete('/:id', supplierController.delete);
+router.get('/',verifyToken, supplierController.getAll);
+router.get('/:id',verifyToken, supplierController.getById);
+router.post('/',verifyToken, supplierController.add);
+router.put('/:id',verifyToken, supplierController.update);
+router.delete('/:id',verifyToken, supplierController.delete);
+router.put('/:id/products',verifyToken, supplierController.addProducts )
 
 module.exports = router
