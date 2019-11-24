@@ -26,9 +26,6 @@ class Suppliers extends FirebaseModel {
         return this.database.doc(id).delete();
     }
 
-    auth(email, password) {
-        // TODO - Danilo
-    }
 }
 
 module.exports = Suppliers
