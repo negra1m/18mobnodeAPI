@@ -3,8 +3,7 @@ const suppliers = require('./suppliers');
 const auth = require('../controllers/auth');
 
 
-const router = express.Router();
-const auth = require('../middlewares/auth');
+const router = express.Router();    
 
 // Auth route
 router.post('/auth', auth.login);
