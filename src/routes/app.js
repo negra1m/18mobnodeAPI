@@ -1,8 +1,8 @@
 const express = require('express');
 const suppliers = require('./suppliers');
 const router = express.Router();
+const auth = require('../middlewares/auth');
 
-router.use('/suppliers', suppliers);
+router.use('/suppliers', auth, suppliers);
 
-// Export Routes 
-module.exports = router;
+module.exports = router

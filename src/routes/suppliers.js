@@ -1,10 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const supplierController = require('../controllers/suppliers')
+const auth = require('../middlewares/auth');
 
-// TODO
-// controllers Integration
-// const Suppliers = require(./controllers/Suppliers);
+router.get('/', supplierController.getAll);
+router.get('/:id', supplierController.getById);
+router.post('/', supplierController.add);
+router.put('/:id', supplierController.update);
+router.delete('/:id', supplierController.delete);
 
-router.get('/:id', Suppliers.get);
-
-module.exports = router;
+module.exports = router
