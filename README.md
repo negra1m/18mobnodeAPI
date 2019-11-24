@@ -25,6 +25,13 @@
 
 Os testes da API estão disponíveis dentro do `docs` na raíz do projeto.
 
+1. Importe os arquivos no Postman.
+<img src="docs/import.png" alt="drawing" style="max-width:100px;"/>
+
+2. Selecione a call que gostaria de testar
+<img src="docs/calls.png" alt="drawing" style="max-width:100px;"/>
+
+
 ## API Dependencies 
 
 <img src="https://image.flaticon.com/icons/png/128/167/167756.png" alt="drawing" style="max-width:50px;"/>
