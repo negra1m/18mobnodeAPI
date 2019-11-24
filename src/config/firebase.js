@@ -1,4 +1,4 @@
-const firebaseConfig = {
+module.exports = {
     apiKey: "AIzaSyAzNsM7EX_VwO2f7PgnbkxEf2iJChMr5NM",
     authDomain: "marmitapp-8233a.firebaseapp.com",
     databaseURL: "https://marmitapp-8233a.firebaseio.com",

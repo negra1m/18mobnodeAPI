@@ -2,7 +2,7 @@
  * FirebaseModel - key Loader
  */
 const firebase = require('firebase');
-const firebaseConfig = require('../config/firebasePrivateKey');
+const firebaseConfig = require('../config/firebase');
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 class FirebaseModel {
